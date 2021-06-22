@@ -1,0 +1,2 @@
+IN ORDER FOR .ENV TO WORK
+--> INSTALL dotenv--webpack (https://www.npmjs.com/package/dotenv-webpack)

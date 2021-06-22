@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
-import { createDispatchHook, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   removeFromCart,
   selectItems,
@@ -13,12 +13,13 @@ import { selectUser } from "../../slices/userSlice";
 import Signin from "../Signin/Signin";
 import { loadStripe } from "@stripe/stripe-js";
 
-// const stripePromise = loadStripe(`${process.env.STRIPE_PUBLIC_KEY}`);
 const stripePromise = loadStripe(
-  "pk_test_51J1YVxL3fRcUBWQKeGVALCUqUUO53Mrrpdw5Dg7d4rMJGPhFJ16XfHAcM0dwsH4GUPC8XzqQcqvFCQ1Oo2CSlMs0007bvipQ9x"
+  `${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`
 );
 
 function Cart({ open, setOpen }) {
+
+  console.log(process.env)
   //For checking user status
   const user = useSelector(selectUser);
 

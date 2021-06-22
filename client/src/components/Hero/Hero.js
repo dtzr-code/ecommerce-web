@@ -10,10 +10,9 @@ import Signin from "../Signin/Signin";
 import Signout from "../Signout/Signout";
 import "./styles.css";
 
-const PUBLIC_KEY =
-  "pk_test_51J1YVxL3fRcUBWQKeGVALCUqUUO53Mrrpdw5Dg7d4rMJGPhFJ16XfHAcM0dwsH4GUPC8XzqQcqvFCQ1Oo2CSlMs0007bvipQ9x";
-
-const stripeTestPromise = loadStripe(PUBLIC_KEY);
+const stripeTestPromise = loadStripe(
+  `${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`
+);
 
 function Hero() {
   const user = useSelector(selectUser);
