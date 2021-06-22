@@ -19,7 +19,6 @@ const stripePromise = loadStripe(
 
 function Cart({ open, setOpen }) {
 
-  console.log(process.env)
   //For checking user status
   const user = useSelector(selectUser);
 

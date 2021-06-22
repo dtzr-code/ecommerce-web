@@ -34,7 +34,7 @@ app.post("/", async (req, res) => {
     customer_email: email,
     mode: "payment",
     success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000/cancel",
+    cancel_url: "http://localhost:3000",
   });
 
   res.json({ id: session.id });

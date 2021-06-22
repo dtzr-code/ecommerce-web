@@ -11,7 +11,7 @@ function Receipes() {
           return (
             <div className="receipe__container" key={receipe.id}>
               <div className="img--container">
-                <img src={receipe.image} />
+                <img className="receipe_img" src={receipe.image} />
               </div>
               <a className="readmore" href="/">
                 Read More

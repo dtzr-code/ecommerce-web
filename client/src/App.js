@@ -5,7 +5,7 @@ import { auth } from "./firebase";
 import Homepage from "./pages/Homepage";
 import { login, logout } from "./slices/userSlice";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Success from './pages/Success/Success'
+import Success from "./pages/Success"
 
 function App() {
 

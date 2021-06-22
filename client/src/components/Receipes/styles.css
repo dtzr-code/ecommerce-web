@@ -41,14 +41,14 @@
   margin-bottom: 20px;
 }
 
-img {
+.receipe_img {
   object-fit: contain;
   width: 350px;
   transition-duration: 2s;
   cursor: pointer;
 }
 
-img:hover {
+.receipe_img:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
