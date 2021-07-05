@@ -59,6 +59,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "dotenv-webpack": "^7.0.3"
+    "dotenv-webpack": "^7.0.3",
+    "webpack": "^5.42.1"
   }
 }
