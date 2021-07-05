@@ -7,7 +7,6 @@ import {
   selectTotal,
   increaseQty,
   decreaseQty,
-  clearCart,
 } from "../../slices/cartSlice";
 import { selectUser } from "../../slices/userSlice";
 import Signin from "../Signin/Signin";
