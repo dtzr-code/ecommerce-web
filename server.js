@@ -13,6 +13,8 @@ app.use(
   })
 );
 
+const path = require('path')
+
 app.post("/", async (req, res) => {
   const { items, email } = req.body;
 
