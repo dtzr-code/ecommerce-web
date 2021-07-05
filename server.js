@@ -52,6 +52,8 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+console.log(path.join(__dirname, "client/build"))
+
 app.listen(process.env.PORT || 5000, () =>
   console.log(`Listening on port ${process.env.PORT}!`)
 );
