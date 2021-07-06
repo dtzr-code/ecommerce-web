@@ -19,5 +19,4 @@
     "express": "^4.17.1",
     "stripe": "^8.155.0"
   },
-  "proxy": "http://localhost:5000"
 }

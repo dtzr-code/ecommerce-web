@@ -13,7 +13,7 @@ app.use(
   })
 );
 
-const path = require('path')
+const path = require("path");
 
 app.post("/", async (req, res) => {
   const { items, email } = req.body;
@@ -43,15 +43,10 @@ app.post("/", async (req, res) => {
 });
 
 if (process.env.NODE_ENV === "production") {
-  //server static content
-  //npm run build
+  // Serve any static files
   app.use(express.static(path.join(__dirname, "client/build")));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/build/index.html"));
+  // Handle React routing, return all requests to React app
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
-
-app.listen(process.env.PORT || 5000, () =>
-  console.log(`Listening on port ${process.env.PORT}!`)
-);
