@@ -5,14 +5,13 @@ import { auth } from "./firebase";
 import Homepage from "./pages/Homepage";
 import { login, logout } from "./slices/userSlice";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Success from "./pages/Success"
+import Success from "./pages/Success";
 
 function App() {
-
   const dispatch = useDispatch();
 
   useEffect(() => {
-    document. title = "This is a title"
+    document.title = "Gymmerce";
     //acts like a listerner so it listens to any authenticated state change
     //if log in and refresh, it will store it to your local memory
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
@@ -42,7 +41,7 @@ function App() {
           <Homepage />
         </Route>
         <Route exact path="/success">
-          <Success/>
+          <Success />
         </Route>
       </Switch>
     </Router>
