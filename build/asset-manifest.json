@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6373b9e6.chunk.css",
+    "main.js": "/static/js/main.5a13c1b5.chunk.js",
+    "main.js.map": "/static/js/main.5a13c1b5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.de1693d8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.de1693d8.js.map",
+    "static/css/2.7dce832d.chunk.css": "/static/css/2.7dce832d.chunk.css",
+    "static/js/2.1bdfe5ea.chunk.js": "/static/js/2.1bdfe5ea.chunk.js",
+    "static/js/2.1bdfe5ea.chunk.js.map": "/static/js/2.1bdfe5ea.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7dce832d.chunk.css.map": "/static/css/2.7dce832d.chunk.css.map",
+    "static/css/main.6373b9e6.chunk.css.map": "/static/css/main.6373b9e6.chunk.css.map",
+    "static/js/2.1bdfe5ea.chunk.js.LICENSE.txt": "/static/js/2.1bdfe5ea.chunk.js.LICENSE.txt",
+    "static/media/bar1.a4c4879d.png": "/static/media/bar1.a4c4879d.png",
+    "static/media/bar2.b0d6a96b.png": "/static/media/bar2.b0d6a96b.png",
+    "static/media/bar3.3da1186e.png": "/static/media/bar3.3da1186e.png",
+    "static/media/bar4.9566ffd2.png": "/static/media/bar4.9566ffd2.png",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ddae9b1b.woff",
+    "static/media/granola.3fb2b6bd.png": "/static/media/granola.3fb2b6bd.png",
+    "static/media/protein.662cb05a.png": "/static/media/protein.662cb05a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de1693d8.js",
+    "static/css/2.7dce832d.chunk.css",
+    "static/js/2.1bdfe5ea.chunk.js",
+    "static/css/main.6373b9e6.chunk.css",
+    "static/js/main.5a13c1b5.chunk.js"
+  ]
+}
