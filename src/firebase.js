@@ -9,7 +9,6 @@ const firebaseConfig = {
     appId: "1:816377875665:web:c7d8938714f64eb18449f0"
 };
 
-console.log(process.env.REACT_APP_FIREBASE_KEY)
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();

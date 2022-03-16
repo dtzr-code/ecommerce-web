@@ -31,13 +31,11 @@
   height: 20px;
   padding: 25px;
   padding-top: 80px;
-  margin-left:auto;
-  margin-right:auto;
+  justify-content: center;
 }
 
 .Hero__Nav{
-  position: fixed;
-  width: 1330px;
+  width: 1450px;
   display: flex;
   justify-content: space-between;
   padding: 25px;
@@ -48,18 +46,18 @@
 a{
   color: white !important;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .Hero__Links__1{
-  font-size: 15px;
-  width: 180px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .Hero__Links__2{
-  font-size: 15px;
+  font-size: 20px;
   width: 70px;
   display: flex;
   justify-content: space-between;
@@ -100,12 +98,13 @@ i.icon.outline{
 }
 
 .user__popup{
-  position: absolute;
-  width: 110px;
+  position:absolute;
+  flex-wrap: wrap;
+  max-width: 165px;
   background-color: gray;
   font-size: 0.7em;
   padding: 10px;
   color: white;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
