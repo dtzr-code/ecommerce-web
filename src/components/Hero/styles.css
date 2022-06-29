@@ -1,41 +1,38 @@
-.Hero__Wrapper{
+.Hero__Wrapper {
   width: 100vw;
   height: 850px;
 }
 
-.Hero__Image{
+.Hero__Image {
   background: url("https://images.unsplash.com/photo-1583248839364-bd7430a3cd83?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80")
-  no-repeat
-  center;
+    no-repeat center;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.signin{
+.signin {
   position: absolute;
   right: 0;
   padding: 5px;
   margin: 10px;
   border: none;
-  
 }
 
-.Background__Overlay{
-  background-color: rgba(0,0,0,0.7);
+.Background__Overlay {
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
   justify-content: center;
 }
 
-.Nav__Wrapper{
+.Nav__Wrapper {
   height: 20px;
-  padding: 25px;
   padding-top: 80px;
   justify-content: center;
 }
 
-.Hero__Nav{
-  width: 1450px;
+.Hero__Nav {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 25px;
@@ -43,53 +40,50 @@
   margin-right: auto;
 }
 
-a{
+a {
   color: white !important;
   text-decoration: none;
   font-size: 20px;
 }
 
-.Hero__Links__1{
+.Hero__Links__1 {
   width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Hero__Links__2{
+.Hero__Links__2 {
   font-size: 20px;
-  width: 70px;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-i.icon.outline{
+i.icon.outline {
   color: white;
   cursor: pointer;
 }
 
-.count{
+.count {
   position: absolute;
-  
-}
-
-.count{
   font-size: 0.7rem;
   color: white;
-  margin-left: 70px;
-  margin-bottom: 10px;
+  right: 0;
+  top: 0;
 }
 
-.cart{
+.cart {
   color: white;
-  cursor: pointer
+  cursor: pointer;
 }
 
-.Tagline{
+.Tagline {
   position: absolute;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   text-align: center;
   margin-top: 250px;
@@ -97,14 +91,14 @@ i.icon.outline{
   font-size: 100px;
 }
 
-.user__popup{
-  position:absolute;
+.user__popup {
   flex-wrap: wrap;
-  max-width: 165px;
-  background-color: gray;
   font-size: 0.7em;
   padding: 10px;
   color: white;
-  margin-top: 100px;
 }
 
+.user__popup > p {
+  width: 100%;
+  font-size: 20px;
+}

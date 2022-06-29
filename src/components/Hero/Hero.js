@@ -33,7 +33,6 @@ function Hero() {
     setOpenModal(!openModal);
   };
 
-  //To show a pop up showing user email
   const [showUser, setShowUser] = useState(false);
 
   return (
@@ -59,27 +58,15 @@ function Hero() {
                 </a>
               </div>
               <div className="Hero__Links__2">
-                <Icon
-                  onMouseOver={() => setShowUser(true)}
-                  onMouseLeave={() => setShowUser(false)}
-                  onClick={showModal}
-                  name="user outline"
-                />
+                <div className="user__popup">
+                  {user ? <p>{user.email}</p> : <p>Welcome, sign in!</p>}
+                </div>
+                <Icon onClick={showModal} name="user outline" />
                 {openModal && !user ? (
                   <Signin openModal={openModal} setOpenModal={setOpenModal} />
                 ) : (
                   <Signout openModal={openModal} setOpenModal={setOpenModal} />
                 )}
-
-                {showUser ? (
-                  <div className="user__popup">
-                    {user ? (
-                      <p>Logged in as {user.email}</p>
-                    ) : (
-                      <p> Please sign in </p>
-                    )}
-                  </div>
-                ) : null}
 
                 <span className="count"> {items ? items.length : 0} </span>
                 <Icon onClick={HandleOpen} name="shopping cart" />
