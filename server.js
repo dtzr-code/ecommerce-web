@@ -12,8 +12,8 @@ app.use(
     extended: true,
   })
 );
-
 const path = require("path");
+const PORT = process.env.PORT || 3001;
 
 app.post("/", async (req, res) => {
   const { items, email } = req.body;
@@ -35,13 +35,19 @@ app.post("/", async (req, res) => {
     line_items: allitems,
     customer_email: email,
     mode: "payment",
-    success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000",
+    success_url: "https://ecommerce-b1ad2.web.app/success",
+    cancel_url: "https://ecommerce-b1ad2.web.app/",
   });
+  console.log(session);
 
   res.json({ id: session.id });
 });
 
+app.listen(PORT, () => {
+  console.log(`server has started on port ${PORT}`);
+});
+
+/* This is to serve the static files in production. */
 if (process.env.NODE_ENV === "production") {
   // Serve any static files
   app.use(express.static(path.join(__dirname, "client/build")));

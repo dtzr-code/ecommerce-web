@@ -12,12 +12,8 @@ import { selectUser } from "../../slices/userSlice";
 import Signin from "../Signin/Signin";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(
-  `${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`
-);
-
+const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`);
 function Cart({ open, setOpen }) {
-
   //For checking user status
   const user = useSelector(selectUser);
 
@@ -56,17 +52,19 @@ function Cart({ open, setOpen }) {
     // Get Stripe.js instance
     const stripe = await stripePromise;
 
-    // Call your backend to create the Checkout Session
-    const response = await fetch("http://localhost:5000/", {
+    //Call your backend to create the Checkout Session
+    const response = await fetch("/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
         items: items,
         email: user.email,
       }),
     });
+    console.log(response);
 
     const session = await response.json();
 
